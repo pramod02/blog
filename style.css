@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ee595d;
+    align-items: centert;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+.headerText{
+    font-size: 35px;
+    width: fit-content;
+    text-align: center;
+    border: thick double #ee595d;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+body {
+    background-color: #2d2a2e;
+}
+
+.subHeader{
+    color: #939293;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Silkscreen', cursive;
+    margin-bottom: 35px;
+}
+
+.blogs{
+    margin: 50px;
+}
+
+.blog{
+    padding: 30px;
+    margin: 15px;
+    margin-bottom: 100px;
+    border: thick double #ab9df2;
+    box-shadow: 10px 17px #ab9df2;
+}
+
+.blogHead{
+    font-size: 4rem;
+    color: #ffd866;
+    font-family: 'Silkscreen', cursive;
+    text-decoration-line: underline;
+}
+
+.blogSubHead{
+    font-size: 1.5rem;
+    color: #ffd866;
+    font-family: 'Silkscreen', cursive;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.content{
+    font-size: 1.8rem;
+    color: #fcfcfa;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.readLink{
+    color: #ffd866;
+    background-color: #ff6188;
+    font-size: 1.5rem;
+    font-family: 'Silkscreen', cursive;
+    padding: 1rem 1ch;
+}
+
+.intro{
+    transition: 1s;
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ee595d;
+}
+
+.logo-header{
+    color: black;
+    transition: translate(-50%, -50%);
+}
+
+.logo{
+
+    border: thick double black;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    display: inline-block;
+    bottom: -200px;
+    opacity: 0;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.7s;
+}
+
+.logo.fade {
+    bottom: 2000px;
+    opacity: 0;
+    transition: ease-in-out 0.8s;
+}
